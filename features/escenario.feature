@@ -5,3 +5,10 @@ Scenario: debo poder visulizar el escenario con la cantidad de espacios para ing
 Given que estoy en el escenario de juego		
 When De clic en el botón jugar			
 Then Debo ver "_ _ _ _ _ _ _ _ _"		
+
+Scenario: debo poder ingresar una letra
+Given que estoy en el escenario de juego	
+And De clic en el botón jugar	
+When ingreso la letra "L"
+And hago clic en el botón verificar			
+Then Debo ver si "letra correcta"

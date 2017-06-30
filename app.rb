@@ -10,3 +10,7 @@ palabra="ARGENTINA"
 session['palabra']=palabra
 erb(:escenario)
 end
+
+post '/verificar'  do
+erb(:escenario)
+end
