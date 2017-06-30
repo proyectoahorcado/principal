@@ -1,13 +1,15 @@
 class VerificarResultado
 
-	PALABRA="LLAMA"
+	ANIMALES=["LLAMA","ELEFANTE","COCODRILO"]
+	PAISES=["ARGENTINA","ALEMANIA","NIGERIA"]
+	PLATOS=["PASTA","SANCOCHO","EMPAREDADO"]
 
 	def leer letra
 		return letra.upcase
 	end
 
 	def existeEnPalabra letra
-		PALABRA.each_char do |l|
+		ANIMALES[0].each_char do |l|
 			if l==letra
 				return true
 			else
@@ -20,7 +22,7 @@ class VerificarResultado
 		lista=[false,false,false,false,false]
 		it=0
 
-		PALABRA.each_char do |l|
+		ANIMALES[0].each_char do |l|
 			if l==letra
 				lista[it]=true
 			end
