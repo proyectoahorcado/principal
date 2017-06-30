@@ -10,7 +10,7 @@ class VerificarResultado
 
 	def existeEnPalabra letra
 		retorno=false
-		ANIMALES[0].each_char do |l|
+		PAISES[0].each_char do |l|
 			if l==letra
 				retorno=true
 			end
@@ -22,7 +22,7 @@ class VerificarResultado
 		lista=[false,false,false,false,false]
 		it=0
 
-		ANIMALES[0].each_char do |l|
+		PAISES[0].each_char do |l|
 			if l==letra
 				lista[it]=true
 			end
