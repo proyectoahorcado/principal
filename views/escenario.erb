@@ -7,8 +7,16 @@
 <h1 align="CENTER"> Play and Don't Die </h1>
 <h1 align="CENTER"><%= session['palabra'] %></h1> 
 <form action="/verificar" method="post">
-	<input type="text" name="inpLetra">
+    <h3>Ingresa la letra</h3>
+	<input type="text" name="inpLetra" maxlength="1">
 	<input type="submit" value="verificar">
 </form>
+
+<form action="/verificarPalabra" method="post">
+    <h3>Ingresa la palabra</h3>
+	<input type="text" name="inpPalabra">
+	<input type="submit" value="verificar palabra">
+</form>
+
 </body>
 </html>

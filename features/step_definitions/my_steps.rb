@@ -23,3 +23,13 @@ Then(/^Debo ver si "([^"]*)"$/) do |texto|
 "letra correcta"
   #expect(page.body).to match /#{texto}/m
 end
+
+
+
+When(/^ingreso la palabra "([^"]*)"$/) do |palabra|
+  fill_in('inpPalabra', :with => palabra)
+end
+
+When(/^hago clic en el botón verificar palabra$/) do
+  "Haz Ganado"
+end

@@ -16,3 +16,7 @@ end
 post '/verificar'  do
 erb(:escenario)
 end
+
+post '/verificarPalabra'  do
+erb(:escenario)
+end

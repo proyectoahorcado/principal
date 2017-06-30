@@ -12,3 +12,10 @@ And De clic en el botón jugar
 When ingreso la letra "L"
 And hago clic en el botón verificar			
 Then Debo ver si "letra correcta"
+
+Scenario: debo poder ingresar una palabra
+Given que estoy en el escenario de juego	
+And De clic en el botón jugar	
+When ingreso la palabra "ARGENTINA"
+And hago clic en el botón verificar palabra			
+Then Debo ver si "Haz Ganado"
