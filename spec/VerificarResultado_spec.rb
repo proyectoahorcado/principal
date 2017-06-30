@@ -2,7 +2,7 @@ require './lib/VerificarResultado'
 
 describe VerificarResultado do
 	
-	it "se recibe una letra" do
+	it "se recibe una letra que si existe" do
 
 		resultado=VerificarResultado.new
 		letra = resultado.leer("L")
@@ -24,5 +24,7 @@ describe VerificarResultado do
 		lista = resultado.verificar(letra)
 		expect(lista).not_to be_empty
 	end
+
+	
 
 end
