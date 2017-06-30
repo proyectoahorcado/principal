@@ -19,7 +19,7 @@ class VerificarResultado
 	end
 
 	def verificar letra
-		lista=[false,false,false,false,false]
+		lista=[false,false,false,false,false,false,false,false,false]
 		it=0
 
 		PAISES[0].each_char do |l|

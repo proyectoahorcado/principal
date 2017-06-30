@@ -26,6 +26,7 @@ if letraCorrecta==true
 else
 	session['resultado']="letra incorrecta"
 end
+
 erb(:escenario)
 end
 
