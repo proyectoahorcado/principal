@@ -9,13 +9,13 @@ class VerificarResultado
 	end
 
 	def existeEnPalabra letra
+		retorno=false
 		ANIMALES[0].each_char do |l|
 			if l==letra
-				return true
-			else
-				return false
+				retorno=true
 			end
 		end
+		return retorno
 	end
 
 	def verificar letra
