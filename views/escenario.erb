@@ -7,8 +7,9 @@
 <h1 align="CENTER"> Play and Don't Die </h1>
 <h1 align="CENTER"><%= session['palabra'] %></h1> 
 <form action="/verificar" method="post">
-	<input type="text" name="inpLetra">
+	<input type="text" name="inpLetra" maxlength="1">
 	<input type="submit" value="verificar">
 </form>
+<%=session['resultado']%>
 </body>
 </html>
