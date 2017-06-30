@@ -10,5 +10,5 @@ post '/jugar'  do
 escenario = Escenario.new
 palabra=escenario.imprimir "ARGENTINA"
 session['palabra']=palabra
-erb(:escenario)
+erb(:escenarioprueba)
 end
